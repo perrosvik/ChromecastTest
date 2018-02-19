@@ -28,15 +28,10 @@ public class MainActivity extends AppCompatActivity {
     private CastContext mCastContext;
     private CastSession mCastSession;
 
-    private MediaInfo mSelectedMedia;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        mMediaRouteButton = (MediaRouteButton) findViewById(R.id.media_route_button);
-        CastButtonFactory.setUpMediaRouteButton(getApplicationContext(), mMediaRouteButton);
 
         mCastContext = CastContext.getSharedInstance(this);
 
