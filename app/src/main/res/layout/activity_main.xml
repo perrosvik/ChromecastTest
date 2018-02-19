@@ -16,4 +16,21 @@
             android:mediaRouteTypes="user"
             android:visibility="gone" />
 
+        <Button
+            android:id="@+id/btn_video"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="81dp"
+            android:layout_marginEnd="120dp"
+            android:layout_marginStart="120dp"
+            android:layout_marginTop="93dp"
+            android:text="Vis bilde"/>
+
+        <fragment
+            android:id="@+id/castMiniController"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:visibility="gone"
+            class="com.google.android.gms.cast.framework.media.widget.MiniControllerFragment" />
 </LinearLayout>
